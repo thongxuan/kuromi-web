@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { QRCodeSVG } from 'qrcode.react'
 
-const APP_STORE_URL = '#'
+const APP_STORE_URL = 'https://apps.apple.com/us/app/openclaw-voice-chat/id6760217569'
 
 function WaveIcon({ className }: { className?: string }) {
   return (
