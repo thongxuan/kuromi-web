@@ -40,17 +40,17 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white font-sans">
       {/* Nav */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-slate-950/60 border-b border-white/5">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-              <WaveIcon className="w-5 h-5 text-white" />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shrink-0">
+              <WaveIcon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
             </div>
-            <span className="text-lg font-semibold tracking-tight">OpenVoice</span>
+            <span className="text-sm sm:text-lg font-semibold tracking-tight truncate">OpenVoice</span>
           </div>
-          <div className="flex items-center gap-6">
-            <a href="#features" className="text-sm text-slate-400 hover:text-white transition-colors">Features</a>
-            <a href="#download" className="text-sm text-slate-400 hover:text-white transition-colors">Download</a>
-            <Link to="/privacy" className="text-sm text-slate-400 hover:text-white transition-colors">Privacy</Link>
+          <div className="flex items-center gap-3 sm:gap-6 shrink-0">
+            <a href="#features" className="text-xs sm:text-sm text-slate-400 hover:text-white transition-colors">Features</a>
+            <a href="#download" className="text-xs sm:text-sm text-slate-400 hover:text-white transition-colors">Download</a>
+            <Link to="/privacy" className="text-xs sm:text-sm text-slate-400 hover:text-white transition-colors">Privacy</Link>
           </div>
         </div>
       </nav>
@@ -261,7 +261,7 @@ export default function Home() {
               Privacy Policy
             </Link>
           </div>
-          <p className="text-xs text-slate-600">&copy; {new Date().getFullYear()} OpenVoice. All rights reserved.</p>
+          <p className="text-xs text-slate-600">&copy; 2026 tamidi.com. All rights reserved.</p>
         </div>
       </footer>
     </div>
