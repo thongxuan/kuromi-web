@@ -19,16 +19,33 @@ export default function Privacy() {
       <main className="pt-32 pb-24 px-6">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold mb-2">Privacy Policy</h1>
-          <p className="text-slate-500 text-sm mb-12">Last updated: March 7, 2026</p>
+          <p className="text-slate-500 text-sm mb-12">Last updated: April 16, 2026</p>
 
           <div className="space-y-10 text-slate-300 leading-relaxed">
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
               <p>
-                OpenVoice is designed with a privacy-first approach. The app acts solely as a voice
-                interface that proxies your voice input to the OpenClaw gateway URL that you configure.
-                We do not store, collect, or track any of your personal information, voice data, or
-                conversation history.
+                OpenVoice is designed with a privacy-first approach. It is only a tool that provides
+                a voice interface for your own OpenClaw setup. OpenVoice is not a hosted platform, and
+                we do not operate a remote backend service for your usage of the app. We do not store,
+                collect, or track your personal information, voice data, or conversation history.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Data Processing</h2>
+              <p className="mb-3">
+                OpenVoice does not process your data on our servers because we do not provide a remote
+                backend service for the product. To use OpenVoice, you must set up your own node to run
+                OpenClaw and obtain your own gateway URL and gateway token. OpenVoice then uses the
+                configuration that you provide to connect your device to that gateway.
+              </p>
+              <p>
+                In practical terms, OpenVoice acts as a local client and interface layer, not as a
+                data platform. Any processing of requests, audio, transcripts, or related metadata
+                happens within the infrastructure you choose to run or the third-party infrastructure
+                you choose to trust. We do not receive that data, and we do not maintain a central
+                service that stores or manages it for you.
               </p>
             </section>
 
@@ -50,10 +67,10 @@ export default function Privacy() {
               <h2 className="text-xl font-semibold text-white mb-3">How Your Data Flows</h2>
               <p>
                 When you use OpenVoice, your voice input is captured on your device and sent directly
-                to the OpenClaw gateway URL that you have configured in the app settings. The app
-                functions purely as a proxy -- it does not intercept, analyze, store, or modify your
-                voice data in transit. The data flows directly from your device to your designated
-                gateway endpoint.
+                to the OpenClaw gateway URL that you have configured in the app settings using the
+                gateway token that you obtained for your own setup. The app functions purely as a
+                proxy -- it does not intercept, analyze, store, or modify your voice data in transit.
+                The data flows directly from your device to your designated gateway endpoint.
               </p>
             </section>
 
